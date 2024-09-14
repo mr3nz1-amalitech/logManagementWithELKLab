@@ -1,0 +1,68 @@
+2024-09-14T08:22:40.416+02:00  INFO 13128 --- [logManagementLab] [main] c.e.l.LogManagementLabApplication        : Starting LogManagementLabApplication using Java 22.0.2 with PID 13128 (D:\Projects\logManagementLab\target\classes started by USER in D:\Projects\logManagementLab)
+2024-09-14T08:22:40.432+02:00  INFO 13128 --- [logManagementLab] [main] c.e.l.LogManagementLabApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-09-14T08:22:41.895+02:00  INFO 13128 --- [logManagementLab] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-14T08:22:41.919+02:00  INFO 13128 --- [logManagementLab] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-14T08:22:41.923+02:00  INFO 13128 --- [logManagementLab] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-14T08:22:41.996+02:00  INFO 13128 --- [logManagementLab] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-14T08:22:41.997+02:00  INFO 13128 --- [logManagementLab] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1461 ms
+2024-09-14T08:22:42.537+02:00  INFO 13128 --- [logManagementLab] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-14T08:22:42.548+02:00  INFO 13128 --- [logManagementLab] [main] c.e.l.LogManagementLabApplication        : Started LogManagementLabApplication in 2.824 seconds (process running for 3.769)
+2024-09-14T08:23:19.948+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-14T08:23:19.948+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-14T08:23:19.949+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-14T08:23:19.984+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-2] c.e.l.controllers.Example                : Hello method called
+2024-09-14T08:23:21.236+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-3] c.e.l.controllers.Example                : Hello method called
+2024-09-14T11:14:34.529+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-6] c.e.l.controllers.Example                : Hello method called
+2024-09-14T11:25:28.591+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-8] c.e.l.controllers.Example                : Hello method called
+2024-09-14T11:25:37.486+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-10] c.e.l.controllers.Example                : Hello method called
+2024-09-14T11:41:11.390+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-3] c.e.l.controllers.Example                : Hello method called
+2024-09-14T11:48:15.153+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-6] c.e.l.controllers.Example                : Hello method called
+2024-09-14T11:51:38.498+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-8] c.e.l.controllers.Example                : Hello method called
+2024-09-14T12:01:14.205+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-2] c.e.l.controllers.Example                : Hello method called
+2024-09-14T12:01:43.470+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xb20x010x000x060xae0x030x030x180xa30xc8-0xdf\0xb90xa0p^0xf70x960x8570xa00xa50xc90xe6/0x850xed0x9f0x95n60xff1'0xf60x95%0x08 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-09-14T12:01:43.470+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x030x89L0x170xc18@7Jc0xcb0xee~0xdf0xc70x090xca0x05$0xa10x990xe90x1a.j|0xf1*m0x0b0xfc0xbeM ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-09-14T12:01:43.757+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x030xff0x090xf620xa65R0x15 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-09-14T12:18:05.141+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-9] c.e.l.controllers.Example                : Hello method called
+2024-09-14T12:18:32.724+02:00  INFO 13128 --- [logManagementLab] [http-nio-8080-exec-10] c.e.l.controllers.Example                : Hello method called
